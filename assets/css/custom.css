@@ -1,0 +1,18 @@
+/* Este es mi archivo de estilos personalizados */
+
+/* Regla de prueba para verificar que el archivo se carga */
+body {
+    /* background-color: lightblue; */ /* Descomenta para ver un cambio de color y confirmar que carga */
+}
+
+/* Ajuste para separar los breadcrumbs de la parte superior */
+.breadcrumbs .container {
+    padding-top: 60px; /* Ajusta este valor según lo necesites */
+    padding-bottom: 30px; /* Opcional: para añadir espacio también en la parte inferior */
+}
+
+/* Si quieres separar específicamente el título H2 dentro de los breadcrumbs */
+.breadcrumbs h2 {
+    margin-top: 20px; /* Ajusta este valor para mover el título hacia abajo */
+    margin-bottom: 10px; /* Opcional: para separar el título de las migas de pan */
+}
