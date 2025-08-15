@@ -16,3 +16,7 @@ body {
     margin-top: 20px; /* Ajusta este valor para mover el título hacia abajo */
     margin-bottom: 10px; /* Opcional: para separar el título de las migas de pan */
 }
+
+.broker-steps .step-item {
+  margin-bottom: 30px;
+}
