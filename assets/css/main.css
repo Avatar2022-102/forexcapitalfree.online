@@ -1769,3 +1769,8 @@ blockquote {
   }
   /* ... el resto de tus estilos ... */
 </style>
+
+.broker-steps .step-item {
+  margin-bottom: 30px;
+}
+
