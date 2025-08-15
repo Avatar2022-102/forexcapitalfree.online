@@ -1637,6 +1637,10 @@ section,
   /* Add your styles here */
 }
 
+.broker-steps .step-item {
+  margin-bottom: 30px;
+}
+
 /* Estilos adicionales para Psicotrading (psicotrading.html) */
 
 .section-title {
@@ -1769,8 +1773,3 @@ blockquote {
   }
   /* ... el resto de tus estilos ... */
 </style>
-
-.broker-steps .step-item {
-  margin-bottom: 30px;
-}
-
