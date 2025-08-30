@@ -28,6 +28,19 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5915929669781373" crossorigin="anonymous"></script>
 
   <style>
+    /* helper para accesibilidad */
+    .visually-hidden {
+      position: absolute !important;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+      white-space: nowrap;
+      border: 0;
+      padding: 0;
+      margin: -1px;
+    }
+
     /* Ajustes leves para el sidebar sin miniaturas */
     .blog-sidebar .recent-posts .post-item { padding: 10px 0; border-bottom: 1px solid #f1f1f1; }
     .blog-sidebar .recent-posts .post-item:last-child { border-bottom: none; }
@@ -96,7 +109,10 @@
       </div>
     </div>
 
-    <section id="single-post-content" class="single-post-content section">
+    <!-- añadimos heading oculto para evitar 'Section lacks heading' -->
+    <section id="single-post-content" class="single-post-content section" aria-labelledby="single-post-heading">
+      <h2 id="single-post-heading" class="visually-hidden">Artículo: Mi Primera Operación en Forex</h2>
+
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-8">
@@ -105,6 +121,7 @@
                 <img src="assets/img/del-caos-a-la-disciplina.png" alt="Del Caos a la Disciplina: El Viaje del Trader Principiante en Forex" class="img-fluid mb-4 rounded shadow-sm" style="max-height: 400px; width: auto; display: block; margin: 0 auto;" itemprop="image">
               </div>
 
+              <!-- único H1 de la página (título del artículo) -->
               <h1 class="post-title text-center mb-4" itemprop="headline">Mi Primera Operación en Forex: Errores Comunes y la Lección Más Valiosa que Aprendí</h1>
 
               <div class="meta-top text-center mb-4">
@@ -116,58 +133,31 @@
               </div>
 
               <div class="info-block" itemprop="articleBody">
-                <h3>El Comienzo Ingenuo</h3>
-                <p>
-                  Recuerdo ese día como si fuera ayer. La emoción de abrir mi primera operación en el mercado Forex era palpable. Había leído algunos artículos, visto un par de videos, y me sentía listo para conquistar los mercados. Elegí el par EUR/USD, sin una estrategia clara, solo con la corazonada de que "iba a subir". Entré con una cantidad de lotes que, en retrospectiva, era totalmente desproporcionada para mi capital.
-                </p>
-                <p>
-                  El gráfico empezó a moverse en mi contra. Mi corazón latía a mil. La euforia inicial se transformó rápidamente en pánico. No tenía un stop-loss. No sabía qué hacer. Solo veía cómo mi pequeño capital se reducía con cada tic adverso. Mi mente gritaba: "¡Ya va a subir, aguantá!". Pero no subió.
-                </p>
-              </div>
+                <h2>El Comienzo Ingenuo</h2>
+                <p>Recuerdo ese día como si fuera ayer. La emoción de abrir mi primera operación en el mercado Forex era palpable. Había leído algunos artículos, visto un par de videos, y me sentía listo para conquistar los mercados. Elegí el par EUR/USD, sin una estrategia clara, solo con la corazonada de que "iba a subir". Entré con una cantidad de lotes que, en retrospectiva, era totalmente desproporcionada para mi capital.</p>
+                <p>El gráfico empezó a moverse en mi contra. Mi corazón latía a mil. La euforia inicial se transformó rápidamente en pánico. No tenía un stop-loss. No sabía qué hacer. Solo veía cómo mi pequeño capital se reducía con cada tic adverso. Mi mente gritaba: "¡Ya va a subir, aguantá!". Pero no subió.</p>
 
-              <div class="quote-section" data-aos="zoom-in" data-aos-delay="150">
-                <blockquote>
-                  <p>
-                    "El trading no es solo sobre análisis de gráficos; es una batalla constante contra uno mismo."
-                  </p>
-                  <footer>Anónimo, Principios del Trading</footer>
-                </blockquote>
-              </div>
-
-              <div class="info-block" data-aos="fade-up" data-aos-delay="200">
-                <h3>El Error Fatal: Falta de Plan y Gestión de Riesgo</h3>
-                <p>
-                  Cerré la operación con una pérdida significativa. Fue doloroso, pero increíblemente revelador. La lección más valiosa no fue sobre dónde poner una media móvil o cómo interpretar una vela, sino sobre algo mucho más fundamental: la <strong>gestión del riesgo y la importancia de tener un plan</strong>.
-                </p>
-                <p>
-                  Mis errores fueron claros:
-                </p>
+                <h2>El Error Fatal: Falta de Plan y Gestión de Riesgo</h2>
+                <p>Cerré la operación con una pérdida significativa. Fue doloroso, pero increíblemente revelador. La lección más valiosa no fue sobre dónde poner una media móvil o cómo interpretar una vela, sino sobre algo mucho más fundamental: la <strong>gestión del riesgo y la importancia de tener un plan</strong>.</p>
                 <ul>
                   <li><i class="bi bi-x-circle-fill error-item" aria-hidden="true"></i> <strong>No tenía un plan de trading:</strong> No sabía cuándo entrar, cuándo salir, o cuánto riesgo tomar.</li>
                   <li><i class="bi bi-x-circle-fill error-item" aria-hidden="true"></i> <strong>Ausencia de Stop Loss:</strong> Me expuse a pérdidas ilimitadas, una práctica que puede ser catastrófica.</li>
                   <li><i class="bi bi-x-circle-fill error-item" aria-hidden="true"></i> <strong>Sobreapalancamiento:</strong> Usé un tamaño de posición demasiado grande para mi cuenta, sin entender el poder del apalancamiento.</li>
                   <li><i class="bi bi-x-circle-fill error-item" aria-hidden="true"></i> <strong>Trading emocional:</strong> Dejé que el miedo y la esperanza guiaran mis decisiones, no la lógica ni un análisis objetivo.</li>
                 </ul>
-              </div>
 
-              <div class="info-block" data-aos="fade-up" data-aos-delay="250">
-                <h3>La Lección que Transformó mi Trading</h3>
-                <p>
-                  Desde ese día, decidí que no volvería a operar sin un plan sólido. Invertí tiempo en educación real, no en "atajos". Aprendí la importancia de:
-                </p>
+                <h2>La Lección que Transformó mi Trading</h2>
+                <p>Desde ese día, decidí que no volvería a operar sin un plan sólido. Invertí tiempo en educación real, no en "atajos". Aprendí la importancia de:</p>
                 <ol>
                   <li><i class="bi bi-check-circle-fill success-item" aria-hidden="true"></i> <strong>Desarrollar una Estrategia Sólida:</strong> Que definiera mis entradas, salidas y gestión del tamaño de la posición.</li>
                   <li><i class="bi bi-check-circle-fill success-item" aria-hidden="true"></i> <strong>Usar Siempre Stop Loss y Take Profit:</strong> Proteger mi capital es la prioridad, y buscar beneficios de forma lógica.</li>
                   <li><i class="bi bi-check-circle-fill success-item" aria-hidden="true"></i> <strong>Gestionar el Tamaño de mi Posición:</strong> Nunca arriesgar más del 1-2% de mi capital por operación, para asegurar la supervivencia a largo plazo.</li>
                   <li><i class="bi bi-check-circle-fill success-item" aria-hidden="true"></i> <strong>Controlar mis Emociones:</strong> Empezar a practicar el psicotrading, entender que las pérdidas son parte del juego y que la disciplina es fundamental.</li>
                 </ol>
-                <p>
-                  Esta primera operación, aunque dolorosa, fue mi verdadero punto de partida en el trading. Me enseñó que el éxito no viene de adivinar el mercado, sino de la disciplina, la preparación y una sólida gestión de riesgo.
-                </p>
               </div>
 
               <div class="alert alert-info mt-5" role="alert" data-aos="fade-up" data-aos-delay="300">
-                <h4 class="alert-heading">🚀 ¡Lleva tu trading al siguiente nivel!</h4>
+                <h3 class="alert-heading">🚀 ¡Lleva tu trading al siguiente nivel!</h3>
                 <p>¿Quieres evitar estos errores comunes y operar con confianza? Descarga nuestra "Checklist Esencial para Traders Principiantes" y empieza a operar con un plan probado.</p>
                 <p class="text-center mt-4"><a href="descargas.html" class="btn btn-primary btn-lg" aria-label="Descargar Checklist Gratuita">Descargar Checklist Gratuita</a></p>
               </div>
@@ -209,7 +199,7 @@
               <div class="sidebar-item recent-posts" data-aos="fade-up" data-aos-delay="200">
                 <h3 class="sidebar-title">Artículos Recientes</h3>
                 <div class="mt-3">
-                  <!-- Imagenes removidas intencionalmente para mejorar rendimiento y coherencia visual -->
+                  <!-- imágenes removidas intencionalmente -->
                   <div class="post-item">
                     <h4 class="post-title-sm"><a href="#">Mi Primera Operación en Forex</a></h4>
                     <time datetime="2025-07-20">Jul 20, 2025</time>
@@ -246,13 +236,9 @@
       </div>
     </section>
 
-    <div class="adsense-block text-center py-5" data-aos="fade-up" data-aos-delay="100" role="complementary" aria-label="Bloque de anuncios">
-      <div class="container">
-        <!-- Espacio para anuncio de Google AdSense -->
-      </div>
-    </div>
-
-    <section class="section-footer-logo">
+    <!-- añadimos heading oculto para sección de footer-logo (evita 'Section lacks heading') -->
+    <section class="section-footer-logo" aria-labelledby="footer-logo-heading">
+      <h2 id="footer-logo-heading" class="visually-hidden">Logo y pie de página</h2>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -261,6 +247,12 @@
         </div>
       </div>
     </section>
+
+    <div class="adsense-block text-center py-5" data-aos="fade-up" data-aos-delay="100" role="complementary" aria-label="Bloque de anuncios">
+      <div class="container">
+        <!-- Espacio para anuncio de Google AdSense -->
+      </div>
+    </div>
 
   </main>
 
