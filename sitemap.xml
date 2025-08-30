@@ -1,156 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
-    <loc>https://forexcapitalfree.online/index.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>1.00</priority>
-    <changefreq>daily</changefreq>
-  </url>
-
-  <url>
-    <loc>https://forexcapitalfree.online/educacion.html</loc>
+    <loc>https://forexcapitalfree.online/</loc>
     <lastmod>2025-07-27</lastmod>
     <priority>0.90</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://forexcapitalfree.online/descargas.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>0.85</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://forexcapitalfree.online/contacto.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>0.80</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://forexcapitalfree.online/noticias.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
 
-  <url>
-    <loc>https://forexcapitalfree.online/criptomonedas.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>0.75</priority>
-    <changefreq>monthly</changefreq>
-  </url>
+  <url><loc>https://forexcapitalfree.online/educacion.html</loc><lastmod>2025-07-27</lastmod><priority>0.80</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://forexcapitalfree.online/descargas.html</loc><lastmod>2025-07-27</lastmod><priority>0.70</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://forexcapitalfree.online/contacto.html</loc><lastmod>2025-07-27</lastmod><priority>0.70</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://forexcapitalfree.online/noticias.html</loc><lastmod>2025-07-27</lastmod><priority>0.80</priority><changefreq>daily</changefreq></url>
+  <url><loc>https://forexcapitalfree.online/criptomonedas.html</loc><lastmod>2025-07-27</lastmod><priority>0.70</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://forexcapitalfree.online/blog.html</loc><lastmod>2025-07-27</lastmod><priority>0.70</priority><changefreq>weekly</changefreq></url>
 
-  <url>
-    <loc>https://forexcapitalfree.online/blog.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>0.70</priority>
-    <changefreq>weekly</changefreq>
-  </url>
+  <url><loc>https://forexcapitalfree.online/conceptos.html</loc><lastmod>2025-07-27</lastmod><priority>0.70</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://forexcapitalfree.online/estructura.html</loc><lastmod>2025-07-27</lastmod><priority>0.70</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://forexcapitalfree.online/acciones.html</loc><lastmod>2025-07-27</lastmod><priority>0.70</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://forexcapitalfree.online/cuando.html</loc><lastmod>2025-07-27</lastmod><priority>0.70</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://forexcapitalfree.online/brokers.html</loc><lastmod>2025-07-27</lastmod><priority>0.70</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://forexcapitalfree.online/cuentas.html</loc><lastmod>2025-07-27</lastmod><priority>0.70</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://forexcapitalfree.online/estrategias.html</loc><lastmod>2025-07-27</lastmod><priority>0.75</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://forexcapitalfree.online/psicotrading.html</loc><lastmod>2025-07-27</lastmod><priority>0.75</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://forexcapitalfree.online/plataformas.html</loc><lastmod>2025-07-27</lastmod><priority>0.65</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://forexcapitalfree.online/ejemplos.html</loc><lastmod>2025-07-27</lastmod><priority>0.65</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://forexcapitalfree.online/glosario.html</loc><lastmod>2025-07-27</lastmod><priority>0.65</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://forexcapitalfree.online/terminos.html</loc><lastmod>2025-07-27</lastmod><priority>0.65</priority><changefreq>monthly</changefreq></url>
 
-  <url>
-    <loc>https://forexcapitalfree.online/conceptos.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>0.70</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://forexcapitalfree.online/estructura.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>0.70</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://forexcapitalfree.online/acciones.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>0.70</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://forexcapitalfree.online/cuando.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>0.70</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://forexcapitalfree.online/brokers.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>0.70</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://forexcapitalfree.online/cuentas.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>0.70</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://forexcapitalfree.online/estrategias.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>0.75</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://forexcapitalfree.online/psicotrading.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>0.75</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://forexcapitalfree.online/plataformas.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>0.65</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://forexcapitalfree.online/ejemplos.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>0.65</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://forexcapitalfree.online/glosario.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>0.65</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://forexcapitalfree.online/terminos.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>0.65</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://forexcapitalfree.online/terminos-condiciones.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>0.30</priority>
-    <changefreq>yearly</changefreq>
-  </url>
-  <url>
-    <loc>https://forexcapitalfree.online/politica-privacidad.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>0.30</priority>
-    <changefreq>yearly</changefreq>
-  </url>
-  <url>
-    <loc>https://forexcapitalfree.online/politica-cookies.html</loc>
-    <lastmod>2025-07-27</lastmod>
-    <priority>0.30</priority>
-    <changefreq>yearly</changefreq>
-  </url>
-
+  <url><loc>https://forexcapitalfree.online/terminos-condiciones.html</loc><lastmod>2025-07-27</lastmod><priority>0.30</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://forexcapitalfree.online/politica-privacidad.html</loc><lastmod>2025-07-27</lastmod><priority>0.30</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://forexcapitalfree.online/politica-cookies.html</loc><lastmod>2025-07-27</lastmod><priority>0.30</priority><changefreq>yearly</changefreq></url>
 </urlset>
