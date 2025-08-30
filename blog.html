@@ -7,7 +7,6 @@
   <title>Mi Primera Operación en Forex: Errores y Lecciones | ForexCapitalFree Blog</title>
   <meta name="description" content="Mi historia personal de la primera operación en Forex, los errores que cometí y las valiosas lecciones que me llevaron a mejorar como trader.">
   <meta name="keywords" content="primera operación forex, errores trading, lecciones forex, trading principiantes, psicotrading, experiencia real, forexcapitalfree">
-
   <meta name="author" content="ForexCapitalFree">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://forexcapitalfree.online/blog.html">
@@ -27,7 +26,17 @@
   <link href="assets/css/custom.css" rel="stylesheet">
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5915929669781373" crossorigin="anonymous"></script>
-  
+
+  <style>
+    /* Ajustes leves para el sidebar sin miniaturas */
+    .blog-sidebar .recent-posts .post-item { padding: 10px 0; border-bottom: 1px solid #f1f1f1; }
+    .blog-sidebar .recent-posts .post-item:last-child { border-bottom: none; }
+    .post-title-sm { font-size: 1rem; margin: 0; }
+    .post-title-sm a { color: #212529; text-decoration: none; }
+    .post-title-sm a:hover { text-decoration: underline; }
+    .post-item time { display:block; font-size: .875rem; color: #6c757d; margin-top: 4px; }
+    /* Mantener coherencia visual con otras páginas */
+  </style>
 </head>
 
 <body class="index-page">
@@ -35,15 +44,15 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center" aria-label="ForexCapitalFree - Inicio">
         <img src="assets/img/ForexCapitalFreeLogo.png" alt="ForexCapitalFree Logo" style="height: 150px;">
       </a>
 
-      <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu" aria-label="Navegación principal">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li class="dropdown">
-            <a href="educacion.html"><span>Educación</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <a href="educacion.html"><span>Educación</span> <i class="bi bi-chevron-down dropdown-indicator" aria-hidden="true"></i></a>
             <ul>
               <li><a href="conceptos.html">Conceptos Básicos</a></li>
               <li><a href="estructura.html">Estructura del Mercado</a></li>
@@ -62,11 +71,13 @@
           </li>
           <li><a href="descargas.html">Descargas</a></li>
           <li><a href="criptomonedas.html">Criptomonedas</a></li>
-          <li class="active"><a href="blog.html" class="active">Blog</a></li> 
+          <li class="active"><a href="blog.html">Blog</a></li>
           <li><a href="contacto.html">Contacto</a></li>
           <li><a href="about.html">Nosotros</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+        <!-- Toggle móvil accesible -->
+        <button class="mobile-nav-toggle d-xl-none bi bi-list" type="button" aria-label="Abrir menú" aria-expanded="false"></button>
       </nav>
 
     </div>
@@ -80,7 +91,8 @@
         <ol>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li class="active">Mi Primera Operación</li> </ol>
+          <li class="active">Mi Primera Operación</li>
+        </ol>
       </div>
     </div>
 
@@ -88,22 +100,22 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-8">
-            <article class="post-single">
+            <article class="post-single" itemscope itemtype="https://schema.org/Article">
               <div class="post-img mb-5">
-                <img src="assets/img/del-caos-a-la-disciplina.png" alt="Del Caos a la Disciplina: El Viaje del Trader Principiante en Forex" class="img-fluid mb-4 rounded shadow-sm" style="max-height: 400px; width: auto; display: block; margin: 0 auto;">
+                <img src="assets/img/del-caos-a-la-disciplina.png" alt="Del Caos a la Disciplina: El Viaje del Trader Principiante en Forex" class="img-fluid mb-4 rounded shadow-sm" style="max-height: 400px; width: auto; display: block; margin: 0 auto;" itemprop="image">
               </div>
 
-              <h1 class="post-title text-center mb-4">Mi Primera Operación en Forex: Errores Comunes y la Lección Más Valiosa que Aprendí</h1>
+              <h1 class="post-title text-center mb-4" itemprop="headline">Mi Primera Operación en Forex: Errores Comunes y la Lección Más Valiosa que Aprendí</h1>
 
               <div class="meta-top text-center mb-4">
                 <ul class="d-inline-flex list-unstyled gap-3">
-                  <li class="d-flex align-items-center"><i class="bi bi-person me-1"></i> <a href="#">ForexCapitalFree Team</a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-calendar me-1"></i> <time datetime="2025-07-20">Jul 20, 2025</time></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-folder me-1"></i> <a href="#">Psicología del Trading</a>, <a href="#">Principiantes</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-person me-1" aria-hidden="true"></i> <a href="#">ForexCapitalFree Team</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-calendar me-1" aria-hidden="true"></i> <time datetime="2025-07-20" itemprop="datePublished">Jul 20, 2025</time></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-folder me-1" aria-hidden="true"></i> <a href="#">Psicología del Trading</a>, <a href="#">Principiantes</a></li>
                 </ul>
               </div>
 
-              <div class="info-block">
+              <div class="info-block" itemprop="articleBody">
                 <h3>El Comienzo Ingenuo</h3>
                 <p>
                   Recuerdo ese día como si fuera ayer. La emoción de abrir mi primera operación en el mercado Forex era palpable. Había leído algunos artículos, visto un par de videos, y me sentía listo para conquistar los mercados. Elegí el par EUR/USD, sin una estrategia clara, solo con la corazonada de que "iba a subir". Entré con una cantidad de lotes que, en retrospectiva, era totalmente desproporcionada para mi capital.
@@ -125,16 +137,16 @@
               <div class="info-block" data-aos="fade-up" data-aos-delay="200">
                 <h3>El Error Fatal: Falta de Plan y Gestión de Riesgo</h3>
                 <p>
-                  Cerré la operación con una pérdida significativa. Fue doloroso, pero increíblemente revelador. La lección más valiosa no fue sobre dónde poner una media móvil o cómo interpretar una vela, sino sobre algo mucho más fundamental: la **gestión del riesgo y la importancia de tener un plan**.
+                  Cerré la operación con una pérdida significativa. Fue doloroso, pero increíblemente revelador. La lección más valiosa no fue sobre dónde poner una media móvil o cómo interpretar una vela, sino sobre algo mucho más fundamental: la <strong>gestión del riesgo y la importancia de tener un plan</strong>.
                 </p>
                 <p>
                   Mis errores fueron claros:
                 </p>
                 <ul>
-                  <li><i class="bi bi-x-circle-fill error-item"></i> <strong>No tenía un plan de trading:</strong> No sabía cuándo entrar, cuándo salir, o cuánto riesgo tomar.</li>
-                  <li><i class="bi bi-x-circle-fill error-item"></i> <strong>Ausencia de Stop Loss:</strong> Me expuse a pérdidas ilimitadas, una práctica que puede ser catastrófica.</li>
-                  <li><i class="bi bi-x-circle-fill error-item"></i> <strong>Sobreapalancamiento:</strong> Usé un tamaño de posición demasiado grande para mi cuenta, sin entender el poder del apalancamiento.</li>
-                  <li><i class="bi bi-x-circle-fill error-item"></i> <strong>Trading emocional:</strong> Dejé que el miedo y la esperanza guiaran mis decisiones, no la lógica ni un análisis objetivo.</li>
+                  <li><i class="bi bi-x-circle-fill error-item" aria-hidden="true"></i> <strong>No tenía un plan de trading:</strong> No sabía cuándo entrar, cuándo salir, o cuánto riesgo tomar.</li>
+                  <li><i class="bi bi-x-circle-fill error-item" aria-hidden="true"></i> <strong>Ausencia de Stop Loss:</strong> Me expuse a pérdidas ilimitadas, una práctica que puede ser catastrófica.</li>
+                  <li><i class="bi bi-x-circle-fill error-item" aria-hidden="true"></i> <strong>Sobreapalancamiento:</strong> Usé un tamaño de posición demasiado grande para mi cuenta, sin entender el poder del apalancamiento.</li>
+                  <li><i class="bi bi-x-circle-fill error-item" aria-hidden="true"></i> <strong>Trading emocional:</strong> Dejé que el miedo y la esperanza guiaran mis decisiones, no la lógica ni un análisis objetivo.</li>
                 </ul>
               </div>
 
@@ -144,10 +156,10 @@
                   Desde ese día, decidí que no volvería a operar sin un plan sólido. Invertí tiempo en educación real, no en "atajos". Aprendí la importancia de:
                 </p>
                 <ol>
-                  <li><i class="bi bi-check-circle-fill success-item"></i> <strong>Desarrollar una Estrategia Sólida:</strong> Que definiera mis entradas, salidas y gestión del tamaño de la posición.</li>
-                  <li><i class="bi bi-check-circle-fill success-item"></i> <strong>Usar Siempre Stop Loss y Take Profit:</strong> Proteger mi capital es la prioridad, y buscar beneficios de forma lógica.</li>
-                  <li><i class="bi bi-check-circle-fill success-item"></i> <strong>Gestionar el Tamaño de mi Posición:</strong> Nunca arriesgar más del 1-2% de mi capital por operación, para asegurar la supervivencia a largo plazo.</li>
-                  <li><i class="bi bi-check-circle-fill success-item"></i> <strong>Controlar mis Emociones:</strong> Empezar a practicar el psicotrading, entender que las pérdidas son parte del juego y que la disciplina es fundamental.</li>
+                  <li><i class="bi bi-check-circle-fill success-item" aria-hidden="true"></i> <strong>Desarrollar una Estrategia Sólida:</strong> Que definiera mis entradas, salidas y gestión del tamaño de la posición.</li>
+                  <li><i class="bi bi-check-circle-fill success-item" aria-hidden="true"></i> <strong>Usar Siempre Stop Loss y Take Profit:</strong> Proteger mi capital es la prioridad, y buscar beneficios de forma lógica.</li>
+                  <li><i class="bi bi-check-circle-fill success-item" aria-hidden="true"></i> <strong>Gestionar el Tamaño de mi Posición:</strong> Nunca arriesgar más del 1-2% de mi capital por operación, para asegurar la supervivencia a largo plazo.</li>
+                  <li><i class="bi bi-check-circle-fill success-item" aria-hidden="true"></i> <strong>Controlar mis Emociones:</strong> Empezar a practicar el psicotrading, entender que las pérdidas son parte del juego y que la disciplina es fundamental.</li>
                 </ol>
                 <p>
                   Esta primera operación, aunque dolorosa, fue mi verdadero punto de partida en el trading. Me enseñó que el éxito no viene de adivinar el mercado, sino de la disciplina, la preparación y una sólida gestión de riesgo.
@@ -161,7 +173,7 @@
               </div>
 
               <div class="meta-bottom text-center mt-5">
-                <i class="bi bi-tags"></i>
+                <i class="bi bi-tags" aria-hidden="true"></i>
                 <ul class="cats d-inline-flex list-unstyled gap-2">
                   <li><a href="#">#ErroresDeTrading</a></li>
                   <li><a href="#">#PrincipiantesForex</a></li>
@@ -171,18 +183,18 @@
               </div>
 
             </article>
-
-            </div>
+          </div>
 
           <div class="col-lg-4">
-            <div class="blog-sidebar">
+            <aside class="blog-sidebar">
               <div class="sidebar-item search-form" data-aos="fade-up" data-aos-delay="100">
                 <h3 class="sidebar-title">Buscar</h3>
                 <form action="#" class="mt-3">
-                  <input type="text" placeholder="Buscar artículos...">
-                  <button type="submit" aria-label="Buscar"><i class="bi bi-search"></i></button>
+                  <input type="text" placeholder="Buscar artículos..." aria-label="Buscar artículos">
+                  <button type="submit" aria-label="Buscar"><i class="bi bi-search" aria-hidden="true"></i></button>
                 </form>
               </div>
+
               <div class="sidebar-item categories" data-aos="fade-up" data-aos-delay="150">
                 <h3 class="sidebar-title">Categorías</h3>
                 <ul class="mt-3">
@@ -193,38 +205,28 @@
                   <li><a href="#">Errores Comunes <span>(2)</span></a></li>
                 </ul>
               </div>
+
               <div class="sidebar-item recent-posts" data-aos="fade-up" data-aos-delay="200">
                 <h3 class="sidebar-title">Artículos Recientes</h3>
                 <div class="mt-3">
-                  <div class="post-item mt-3 d-flex align-items-center">
-                    <a href="#">
-                      <img src="assets/img/mi-primera-operacion-mini.jpg" alt="Miniatura de 'Mi Primera Operación en Forex'" class="img-fluid me-3 rounded shadow-sm" style="max-height: 50px; width: auto; display: block;">
-                    </a>
-                    <div>
-                      <h3><a href="#">Mi Primera Operación en Forex</a></h3>
-                      <time datetime="2025-07-20">Jul 20, 2025</time>
-                    </div>
+                  <!-- Imagenes removidas intencionalmente para mejorar rendimiento y coherencia visual -->
+                  <div class="post-item">
+                    <h4 class="post-title-sm"><a href="#">Mi Primera Operación en Forex</a></h4>
+                    <time datetime="2025-07-20">Jul 20, 2025</time>
                   </div>
-                  <div class="post-item mt-3 d-flex align-items-center">
-                    <a href="#">
-                      <img src="assets/img/la-disciplina-es-todo-mini.jpg" alt="Miniatura de 'La Disciplina lo es Todo'" class="img-fluid me-3 rounded shadow-sm" style="max-height: 50px; width: auto; display: block;">
-                    </a>
-                    <div>
-                      <h3><a href="#">La Disciplina lo es Todo</a></h3>
-                      <time datetime="2025-07-15">Jul 15, 2025</time>
-                    </div>
+
+                  <div class="post-item">
+                    <h4 class="post-title-sm"><a href="#">La Disciplina lo es Todo</a></h4>
+                    <time datetime="2025-07-15">Jul 15, 2025</time>
                   </div>
-                  <div class="post-item mt-3 d-flex align-items-center">
-                    <a href="#">
-                      <img src="assets/img/herramientas-esenciales-mini.jpg" alt="Miniatura de 'Herramientas Esenciales'" class="img-fluid me-3 rounded shadow-sm" style="max-height: 50px; width: auto; display: block;">
-                    </a>
-                    <div>
-                      <h3><a href="#">Herramientas Esenciales</a></h3>
-                      <time datetime="2025-07-10">Jul 10, 2025</time>
-                    </div>
+
+                  <div class="post-item">
+                    <h4 class="post-title-sm"><a href="#">Herramientas Esenciales</a></h4>
+                    <time datetime="2025-07-10">Jul 10, 2025</time>
                   </div>
                 </div>
               </div>
+
               <div class="sidebar-item tags" data-aos="fade-up" data-aos-delay="250">
                 <h3 class="sidebar-title">Etiquetas</h3>
                 <ul class="mt-3 d-flex flex-wrap gap-2">
@@ -237,29 +239,28 @@
                   <li><a href="#">#Mercado</a></li>
                 </ul>
               </div>
-            </div>
+            </aside>
           </div>
+
         </div>
       </div>
     </section>
 
-    <div class="adsense-block text-center py-5" data-aos="fade-up" data-aos-delay="100"
-         role="complementary" aria-label="Bloque de anuncios">
+    <div class="adsense-block text-center py-5" data-aos="fade-up" data-aos-delay="100" role="complementary" aria-label="Bloque de anuncios">
       <div class="container">
         <!-- Espacio para anuncio de Google AdSense -->
       </div>
     </div>
 
-
     <section class="section-footer-logo">
-          <div class="container">
-              <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                      <img src="assets/img/ForexCapitalFree.online.jpg" alt="Imagen ForexCapitalFree" class="img-fluid rounded shadow-sm d-block mx-auto" style="max-height: 50px; width: auto;">
-                  </div>
-              </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <img src="assets/img/ForexCapitalFree.online.jpg" alt="Imagen ForexCapitalFree" class="img-fluid rounded shadow-sm d-block mx-auto" style="max-height: 50px; width: auto;">
           </div>
-    </section> 
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -276,14 +277,14 @@
         <a href="politica-cookies.html" title="Política de Cookies de ForexCapitalFree" rel="noopener noreferrer">Política de Cookies</a>
       </div>
       <div class="social-links text-center pt-3">
-        <a href="https://facebook.com/forexcapitalfree" target="_blank" class="facebook" rel="noopener noreferrer" aria-label="Síguenos en Facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://t.me/forexcapitalfree" target="_blank" class="telegram" rel="noopener noreferrer" aria-label="Únete a nuestro canal de Telegram"><i class="bi bi-telegram"></i></a>
-        <a href="https://instagram.com/forexcapitalfree" target="_blank" class="instagram" rel="noopener noreferrer" aria-label="Síguenos en Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://facebook.com/forexcapitalfree" target="_blank" class="facebook" rel="noopener noreferrer" aria-label="Síguenos en Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+        <a href="https://t.me/forexcapitalfree" target="_blank" class="telegram" rel="noopener noreferrer" aria-label="Únete a nuestro canal de Telegram"><i class="bi bi-telegram" aria-hidden="true"></i></a>
+        <a href="https://instagram.com/forexcapitalfree" target="_blank" class="instagram" rel="noopener noreferrer" aria-label="Síguenos en Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
       </div>
     </div>
   </footer>
 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Volver arriba"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
 
   <div id="preloader"></div>
 
@@ -296,6 +297,20 @@
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
   <script src="assets/js/main.js"></script>
+  <script>
+    AOS.init();
+    // mobile toggle aria-expanded handling (simple)
+    document.addEventListener('DOMContentLoaded', function() {
+      var btn = document.querySelector('.mobile-nav-toggle');
+      if (btn) {
+        btn.addEventListener('click', function() {
+          var expanded = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', (!expanded).toString());
+          document.getElementById('navmenu')?.classList.toggle('open');
+        });
+      }
+    });
+  </script>
 
 </body>
 
