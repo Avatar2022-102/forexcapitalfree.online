@@ -1,18 +1,22 @@
-/* Estilos para el overlay de los breadcrumbs */
-.breadcrumbs {
-    position: relative;
+/* Este es mi archivo de estilos personalizados */
+
+/* Regla de prueba para verificar que el archivo se carga */
+body {
+    /* background-color: lightblue; */ /* Descomenta para ver un cambio de color y confirmar que carga */
 }
-.breadcrumbs::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-}
+
+/* Ajuste para separar los breadcrumbs de la parte superior */
 .breadcrumbs .container {
-    position: relative;
-    z-index: 2;
+    padding-top: 60px; /* Ajusta este valor según lo necesites */
+    padding-bottom: 30px; /* Opcional: para añadir espacio también en la parte inferior */
+}
+
+/* Si quieres separar específicamente el título H2 dentro de los breadcrumbs */
+.breadcrumbs h2 {
+    margin-top: 20px; /* Ajusta este valor para mover el título hacia abajo */
+    margin-bottom: 10px; /* Opcional: para separar el título de las migas de pan */
+}
+
+.broker-steps .step-item {
+  margin-bottom: 30px;
 }
