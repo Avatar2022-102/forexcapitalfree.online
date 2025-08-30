@@ -22,24 +22,61 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/custom.css" rel="stylesheet">
 
+  <!-- JSON-LD Article (mejora SEO / E-A-T) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Forex vs Acciones: ¿Cuál Mercado es Mejor para Vos?",
+    "description": "Compará Forex y acciones: diferencias en horarios, apalancamiento, liquidez, costos y volatilidad.",
+    "image": "https://forexcapitalfree.online/assets/img/oren-elbaz-Wf1opKy4iaI-unsplash.jpg",
+    "author": {
+      "@type": "Person",
+      "name": "ForexCapitalFree"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ForexCapitalFree",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://forexcapitalfree.online/assets/img/ForexCapitalFreeLogo.png"
+      }
+    },
+    "datePublished": "2025-07-27",
+    "dateModified": "2025-07-27"
+  }
+  </script>
+
   <meta name="google-adsense-account" content="ca-pub-5915929669781373">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5915929669781373" crossorigin="anonymous"></script>
+
+  <style>
+    /* Pequeño helper para accesibilidad (visually-hidden) */
+    .visually-hidden {
+      position: absolute !important;
+      height: 1px; width: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+      white-space: nowrap;
+      border: 0; padding: 0; margin: -1px;
+    }
+    /* Opcional: card interior para contenido (similar a tu estilo de contacto) */
+    .content-card { background:#fff; padding:24px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.04); }
+  </style>
 </head>
 
 <body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center sticky-top">
+  <header id="header" class="header d-flex align-items-center sticky-top" role="banner">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center" aria-label="ForexCapitalFree - Inicio">
         <img src="assets/img/ForexCapitalFreeLogo.png" alt="ForexCapitalFree Logo" style="height: 150px;">
       </a>
 
-      <nav id="navmenu" class="navmenu" aria-label="Navegación principal">
+      <nav id="navmenu" class="navmenu" aria-label="Navegación principal" role="navigation">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li class="dropdown">
-            <a href="educacion.html" class="active"><span>Educación</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <a href="educacion.html" class="active" aria-haspopup="true" aria-expanded="false"><span>Educación</span> <i class="bi bi-chevron-down dropdown-indicator" aria-hidden="true"></i></a>
             <ul>
               <li><a href="conceptos.html">Conceptos Básicos</a></li>
               <li><a href="estructura.html">Estructura del Mercado</a></li>
@@ -63,106 +100,96 @@
         </ul>
 
         <!-- toggle móvil accesible -->
-        <button class="mobile-nav-toggle d-xl-none bi bi-list" type="button" aria-label="Abrir menú"></button>
+        <button class="mobile-nav-toggle d-xl-none bi bi-list" type="button" aria-label="Abrir menú" aria-expanded="false"></button>
       </nav>
-
     </div>
   </header>
 
-  <main class="main">
-
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/ForexCapitalFreeLogo.png');">
+  <main id="main" class="main" role="main">
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/ForexCapitalFreeLogo.png');" role="region" aria-label="Breadcrumbs">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
         <h2>Forex vs Acciones</h2>
         <ol>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="educacion.html">Educación</a></li>
-          <li class="active">Forex vs Acciones</li>
+          <li class="active" aria-current="page">Forex vs Acciones</li>
         </ol>
       </div>
     </div>
 
-    <section id="single-post-content" class="single-post-content section">
-      <!-- Encabezado para la sección (visualmente oculto para usuarios, visible para validador/SEO) -->
-      <h2 class="visually-hidden">Artículo: Forex vs Acciones</h2>
+    <section id="single-post-content" class="single-post-content section" aria-labelledby="article-heading">
+      <!-- Cabecera útil para validadores / SEO -->
+      <h2 id="article-heading" class="visually-hidden">Artículo: Forex vs Acciones</h2>
 
       <div class="container" data-aos="fade-up">
         <div class="row justify-content-center">
           <div class="col-lg-10">
 
-            <article class="post-single">
-              <h1 class="post-title text-center mb-5">Forex vs Acciones: ¿Cuál Mercado es Mejor para Vos?</h1>
-              <p class="lead text-center">Explora las diferencias fundamentales entre el trading de divisas (Forex) y la inversión en acciones. Descubre cuál se alinea mejor con tus objetivos y perfil de riesgo.</p>
+            <article class="post-single content-card" itemscope itemtype="https://schema.org/Article">
+              <header>
+                <h1 itemprop="headline" class="post-title text-center mb-3">Forex vs Acciones: ¿Cuál Mercado es Mejor para Vos?</h1>
+                <p class="lead text-center mb-1" itemprop="description">Explora las diferencias fundamentales entre el trading de divisas (Forex) y la inversión en acciones. Descubre cuál se alinea mejor con tus objetivos y perfil de riesgo.</p>
+                <p class="text-center text-muted small mb-3">Por <strong itemprop="author">ForexCapitalFree</strong> • <time itemprop="datePublished" datetime="2025-07-27">27 julio 2025</time></p>
+              </header>
 
-              <img src="assets/img/oren-elbaz-Wf1opKy4iaI-unsplash.jpg" alt="Comparativa Forex y Acciones" class="img-fluid mb-4 rounded shadow-sm" style="max-height: 400px; width: auto; display: block; margin: 0 auto;">
+              <figure>
+                <img src="assets/img/oren-elbaz-Wf1opKy4iaI-unsplash.jpg" alt="Comparativa entre gráficos y símbolos de Forex y acciones" class="img-fluid mb-4 rounded shadow-sm" style="max-height:400px; width:auto; display:block; margin:0 auto;" loading="lazy" width="1200" height="675" itemprop="image">
+                <figcaption class="text-center small text-muted mb-4">Comparativa visual entre Forex y acciones.</figcaption>
+              </figure>
 
-              <div class="info-block" data-aos="fade-up" data-aos-delay="80">
-                <h2>Introducción a los Mercados</h2>
-                <p>El mercado Forex y el mercado de acciones tienen características propias. Aunque ambos ofrecen oportunidades para la inversión y el trading, sus dinámicas son muy diferentes. Comprender estas diferencias es crucial para tomar decisiones informadas sobre dónde invertir tu capital y qué tipo de operativa se adapta mejor a tu perfil.</p>
-              </div>
+              <section class="info-block" aria-labelledby="intro">
+                <h2 id="intro">Introducción a los Mercados</h2>
+                <p>El mercado Forex y el mercado de acciones tienen características propias. Aunque ambos ofrecen oportunidades para la inversión y el trading, sus dinámicas son muy distintas. Comprender estas diferencias es clave para decidir dónde operar según tu perfil.</p>
+              </section>
 
-              <div class="info-block" data-aos="fade-up" data-aos-delay="100">
-                <h2>Principales Diferencias del Mercado Forex</h2>
+              <section class="info-block" aria-labelledby="forex-diffs">
+                <h2 id="forex-diffs">Principales Diferencias del Mercado Forex</h2>
                 <p>El mercado Forex posee características únicas que lo hacen atractivo para muchos traders:</p>
                 <ul>
-                  <li><i class="bi bi-clock-fill success-item"></i> <strong>Horario Extendido:</strong> El mercado Forex opera 24 horas al día, 5 días a la semana.</li>
-                  <li><i class="bi bi-tag-fill success-item"></i> <strong>Comisiones Bajas:</strong> Costos vía spread.</li>
-                  <li><i class="bi bi-currency-exchange success-item"></i> <strong>Apalancamiento:</strong> Más elevado que en acciones; mayor riesgo y oportunidad.</li>
-                  <li><i class="bi bi-graph-up-arrow success-item"></i> <strong>Liquidez Incomparable:</strong> Mercado más grande y líquido.</li>
-                  <li><i class="bi bi-arrow-left-right success-item"></i> <strong>Long/Short sencillo:</strong> Facilita operar en ambas direcciones.</li>
-                  <li><i class="bi bi-bar-chart-fill success-item"></i> <strong>Tendencias Claras:</strong> Pares con tendencias prolongadas.</li>
-                  <li><i class="bi bi-newspaper success-item"></i> <strong>Acceso a Información:</strong> Noticias macro afectan directamente a las divisas.</li>
+                  <li><i class="bi bi-clock-fill success-item" aria-hidden="true"></i> <strong>Horario Extendido:</strong> Opera 24 horas, 5 días a la semana.</li>
+                  <li><i class="bi bi-tag-fill success-item" aria-hidden="true"></i> <strong>Comisiones Bajas:</strong> El costo suele estar en el spread.</li>
+                  <li><i class="bi bi-currency-exchange success-item" aria-hidden="true"></i> <strong>Apalancamiento:</strong> Mayor apalancamiento disponible (más riesgo y oportunidad).</li>
+                  <li><i class="bi bi-graph-up-arrow success-item" aria-hidden="true"></i> <strong>Liquidez alta:</strong> Mercado global y muy líquido.</li>
                 </ul>
-              </div>
+              </section>
 
-              <div class="info-block" data-aos="fade-up" data-aos-delay="140">
-                <h2>Diferencias Clave en el Mercado de Acciones</h2>
-                <p>Por otro lado, la inversión en acciones presenta sus propias características:</p>
+              <section class="info-block" aria-labelledby="stocks-diffs">
+                <h2 id="stocks-diffs">Diferencias Clave en el Mercado de Acciones</h2>
+                <p>La inversión en acciones presenta características propias:</p>
                 <ul>
-                  <li><i class="bi bi-calendar-day error-item"></i> <strong>Horario Limitado:</strong> Horarios de bolsa específicos.</li>
-                  <li><i class="bi bi-percent error-item"></i> <strong>Comisiones y Gastos:</strong> Pueden existir comisiones por operación.</li>
-                  <li><i class="bi bi-arrow-down-left error-item"></i> <strong>Apalancamiento Reducido:</strong> Requiere mayor capital para posiciones grandes.</li>
-                  <li><i class="bi bi-bank error-item"></i> <strong>Liquidez Variable:</strong> Depende de la capitalización de la empresa.</li>
-                  <li><i class="bi bi-arrow-up error-item"></i> <strong>Enfoque en Apreciación:</strong> Principal vía de ganancia suele ser la apreciación de la acción.</li>
-                  <li><i class="bi bi-clipboard-data error-item"></i> <strong>Influencia de la Empresa:</strong> Noticias y resultados afectan directamente el precio.</li>
+                  <li><i class="bi bi-calendar-day error-item" aria-hidden="true"></i> <strong>Horario limitado:</strong> Horario de bolsa definido.</li>
+                  <li><i class="bi bi-percent error-item" aria-hidden="true"></i> <strong>Comisiones:</strong> Pueden existir comisiones por operación.</li>
+                  <li><i class="bi bi-bank error-item" aria-hidden="true"></i> <strong>Liquidez variable:</strong> Depende de la capitalización.</li>
                 </ul>
-              </div>
+              </section>
 
-              <div class="adsense-block text-center py-5" role="complementary" aria-label="Bloque de anuncios" data-aos="fade-up" data-aos-delay="180">
+              <div class="adsense-block text-center py-4" role="complementary" aria-label="Bloque de anuncios" data-aos="fade-up" data-aos-delay="180">
                 <div class="container">
-                  <!-- Espacio para anuncio de Google AdSense -->
+                  <!-- Espacio para anuncio de Google AdSense (asegúrate de no mostrar anuncios si la página es thin content) -->
                 </div>
               </div>
 
-              <div class="quote-section" data-aos="zoom-in" data-aos-delay="300">
-                <blockquote>
-                  <p>“El éxito en los mercados no se trata de tener razón, sino de ser rentable.”</p>
-                  <footer>Larry Hite, Trader y autor</footer>
-                </blockquote>
-              </div>
-
-              <div class="info-block" data-aos="fade-up" data-aos-delay="350">
-                <h2>¿Cómo Operar para Ganar Dinero en Forex?</h2>
-                <p>El objetivo principal en Forex es <strong>comprar una moneda esperando que aumente su valor</strong> respecto a otra, o <strong>vender si se espera que baje</strong>. Esto se realiza mediante <strong>pares de divisas</strong>. Siempre se compra una moneda y se vende otra al mismo tiempo.</p>
-                <p>Ejemplo práctico:</p>
+              <section class="info-block" aria-labelledby="how-to-trade">
+                <h2 id="how-to-trade">¿Cómo Operar para Ganar Dinero en Forex?</h2>
+                <p>El objetivo principal en Forex es comprar una moneda esperando que aumente su valor respecto a otra, o vender si se espera que baje. Esto se hace mediante pares de divisas.</p>
                 <ul>
-                  <li><i class="bi bi-arrow-up-circle-fill"></i> <strong>Comprar GBP/JPY:</strong> Comprás GBP y vendés JPY; ganas si GBP se fortalece frente a JPY.</li>
-                  <li><i class="bi bi-arrow-down-circle-fill"></i> <strong>Vender GBP/JPY:</strong> Vendés GBP y comprás JPY; ganas si GBP se debilita frente a JPY.</li>
+                  <li><strong>Comprar GBP/JPY:</strong> Comprás GBP y vendés JPY; ganas si GBP sube frente a JPY.</li>
+                  <li><strong>Vender GBP/JPY:</strong> Vendés GBP y comprás JPY; ganas si GBP baja frente al JPY.</li>
                 </ul>
-                <p><strong>Consejo:</strong> Hacé siempre un análisis previo y controla tu riesgo con stop loss y tamaño de posición adecuado.</p>
+                <p><strong>Consejo:</strong> Haz siempre análisis y controla riesgo con stop loss y tamaño de posición.</p>
+              </section>
+
+              <div class="call-to-action-psicotrading mt-4" data-aos="fade-up" data-aos-delay="400">
+                <h3>¿Listo para profundizar?</h3>
+                <p>Explora guías y herramientas para diseñar tu plan de trading.</p>
+                <a href="estructura.html" class="btn btn-outline-light" aria-label="Entender la Estructura del Mercado">Entender la Estructura del Mercado</a>
+                <a href="brokers.html" class="btn btn-outline-light" aria-label="Encontrar un Broker Confiable">Encontrar un Broker Confiable</a>
               </div>
 
-              <div class="call-to-action-psicotrading" data-aos="fade-up" data-aos-delay="400">
-                <h3>¿Listo para Comenzar a Operar en Forex?</h3>
-                <p>Descubre más sobre cómo funciona el mercado Forex y cómo puedes empezar a operar con éxito.</p>
-                <a href="estructura.html" class="btn btn-outline-light" aria-label="Aprender sobre la estructura del mercado Forex">Entender la Estructura del Mercado</a>
-                <a href="brokers.html" class="btn btn-outline-light" aria-label="Cómo elegir un broker de Forex">Encontrar un Broker Confiable</a>
-              </div>
-
-              <div class="post-nav-links d-flex justify-content-between pt-5">
-                <a href="conceptos.html" class="fw-bold" aria-label="Anterior: Conceptos Básicos"><i class="bi bi-chevron-left"></i> Anterior: Conceptos Básicos</a>
-                <a href="estructura.html" class="fw-bold" aria-label="Siguiente: Estructura del Mercado">Siguiente: Estructura del Mercado <i class="bi bi-chevron-right"></i></a>
-              </div>
+              <nav class="post-nav-links d-flex justify-content-between pt-5" aria-label="Navegación de artículo">
+                <a href="conceptos.html" class="fw-bold" aria-label="Anterior: Conceptos Básicos"><i class="bi bi-chevron-left" aria-hidden="true"></i> Anterior: Conceptos Básicos</a>
+                <a href="estructura.html" class="fw-bold" aria-label="Siguiente: Estructura del Mercado">Siguiente: Estructura del Mercado <i class="bi bi-chevron-right" aria-hidden="true"></i></a>
+              </nav>
 
             </article>
 
@@ -179,7 +206,7 @@
 
   </main>
 
-  <footer id="footer" class="footer">
+  <footer id="footer" class="footer" role="contentinfo">
     <div class="container">
       <div class="copyright text-center">
         <p>© 2025 <strong>ForexCapitalFree</strong> - Todos los derechos reservados.</p>
