@@ -40,19 +40,9 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5915929669781373" crossorigin="anonymous"></script>
 
   <style>
-    .visually-hidden {
-      position: absolute !important;
-      height: 1px;
-      width: 1px;
-      overflow: hidden;
-      clip: rect(1px, 1px, 1px, 1px);
-      white-space: nowrap;
-      border: 0;
-      padding: 0;
-      margin: -1px;
-    }
-    .content-card { background:#fff; padding:24px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.04); }
-    .platform-card { background:#fff; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.08); margin-bottom:40px; padding:30px; border-left:5px solid #0d6efd; }
+    .visually-hidden { position:absolute !important; height:1px; width:1px; overflow:hidden; clip:rect(1px,1px,1px,1px); white-space:nowrap; border:0; padding:0; margin:-1px;}
+    .content-card { background:#fff; padding:24px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.04);}
+    .platform-card { background:#fff; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.08); margin-bottom:40px; padding:30px; border-left:5px solid #0d6efd;}
     .platform-card h3 { color:#0d6efd; margin-bottom:16px; font-weight:600; display:flex; align-items:center; }
     .platform-card img { max-width:100%; height:auto; border-radius:8px; margin-bottom:18px; }
     .profile-badge { display:inline-block; background:#0d6efd; color:#fff; padding:5px 12px; border-radius:20px; font-size:.9rem; margin-top:10px; }
@@ -119,11 +109,11 @@
       <div class="container" data-aos="fade-up">
         <div class="row justify-content-center">
           <div class="col-lg-10">
-
             <article class="content-card post-single" itemscope itemtype="https://schema.org/Article">
               <header>
                 <h1 itemprop="headline" class="post-title text-center mb-3">Eligiendo Tu Herramienta de Trading: Guía de Plataformas Forex</h1>
                 <p class="lead text-center" itemprop="description">La plataforma de trading es tu centro de comando —elige la que se adapte a tu estilo: MT4, MT5, cTrader o WebTrader.</p>
+                <p class="text-center text-muted small mb-3">Probar varias plataformas en demo te ayudará a decidir; busca estabilidad, ejecución y las herramientas que realmente uses.</p>
               </header>
 
               <figure>
@@ -134,8 +124,9 @@
               <!-- MT4 -->
               <section class="platform-card" aria-labelledby="mt4">
                 <h3 id="mt4"><i class="bi bi-cpu" aria-hidden="true"></i> MetaTrader 4 (MT4)</h3>
-                <p>MT4 es el estándar de la industria: estable, ligera y perfecta para EAs y traders técnicos.</p>
+                <p>MT4 es el estándar de la industria: estable, ligera y perfecta para EAs y traders técnicos. Por su antigüedad tiene una enorme base de indicadores y robots listos para usar.</p>
                 <img src="assets/img/mt4-devices.jpg" alt="MT4 en varios dispositivos" loading="lazy">
+                <p>Además, muchos brokers mantienen servidores optimizados para MT4, lo que reduce slippage y latencia en condiciones normales. Si vas a empezar con trading algorítmico, MT4 sigue siendo una opción muy razonable.</p>
                 <ul>
                   <li><strong>Pros:</strong> Amplia compatibilidad, gran biblioteca de indicadores y EAs, comunidad extensa.</li>
                   <li class="con"><strong>Contras:</strong> Limitada a Forex/CFDs y UI algo anticuada.</li>
@@ -146,8 +137,9 @@
               <!-- MT5 -->
               <section class="platform-card" aria-labelledby="mt5">
                 <h3 id="mt5"><i class="bi bi-pc-display" aria-hidden="true"></i> MetaTrader 5 (MT5)</h3>
-                <p>MT5 es la evolución de MT4: multiactivos, más marcos temporales y profundidad de mercado.</p>
+                <p>MT5 es la evolución de MT4: multiactivos, más marcos temporales y profundidad de mercado. Es recomendable si quieres operar acciones o futuros junto a Forex.</p>
                 <img src="assets/img/mt5-web-terminal.jpg" alt="MetaTrader 5" loading="lazy">
+                <p>Su calendario económico integrado y herramientas de análisis avanzadas pueden reducir la necesidad de fuentes externas. Para desarrolladores, MQL5 ofrece más posibilidades, aunque eso implica curva de aprendizaje.</p>
                 <ul>
                   <li><strong>Pros:</strong> Soporta múltiples mercados, más tipos de órdenes, calendario integrado.</li>
                   <li class="con"><strong>Contras:</strong> Menos compatibilidad de EAs con MT4 y consume más recursos.</li>
@@ -158,10 +150,11 @@
               <!-- cTrader -->
               <section class="platform-card" aria-labelledby="ctrader">
                 <h3 id="ctrader"><i class="bi bi-graph-up" aria-hidden="true"></i> cTrader</h3>
-                <p>Plataforma moderna, diseñada para ejecución ECN, rápida y con profundidad de mercado real.</p>
+                <p>cTrader apuesta por ejecución ECN, transparencia y velocidad. Tiene una interfaz moderna y herramientas potentes para scalpers y traders de frecuencia.</p>
                 <img src="assets/img/fx-pro-1-1-684x513.jpg" alt="cTrader" loading="lazy">
+                <p>Si tu estrategia depende de micro-diferenciales y ejecuciones consistentes, cTrader suele ofrecer mejores métricas de slippage y más control sobre órdenes en profundidad de mercado.</p>
                 <ul>
-                  <li><strong>Pros:</strong> Ejecución rápida, interfaz moderna y transparente.</li>
+                  <li><strong>Pros:</strong> Ejecución rápida, interfaz moderna y transparencia.</li>
                   <li class="con"><strong>Contras:</strong> No todos los brokers la ofrecen.</li>
                 </ul>
                 <span class="profile-badge">Perfil ideal: Scalpers y traders que priorizan ejecución</span>
@@ -170,8 +163,9 @@
               <!-- WebTrader -->
               <section class="platform-card" aria-labelledby="webtrader">
                 <h3 id="webtrader"><i class="bi bi-browser-chrome" aria-hidden="true"></i> WebTrader</h3>
-                <p>Accede desde el navegador sin instalaciones; ideal para revisar cuentas desde cualquier equipo.</p>
+                <p>WebTrader permite operar desde el navegador sin instalaciones. Perfecto para auditoría rápida de posiciones o cuando estás en un equipo que no es tuyo.</p>
                 <img src="assets/img/web-topLaptopBg.png" alt="WebTrader en navegador" loading="lazy">
+                <p>Para traders que no necesitan automatización avanzada, WebTrader ofrece lo esencial: gráficos, órdenes y gestión de cuenta. Ideal como complemento a una versión de escritorio.</p>
                 <ul>
                   <li><strong>Pros:</strong> Accesibilidad total y sin instalaciones.</li>
                   <li class="con"><strong>Contras:</strong> Menos funciones avanzadas y dependiente de la conexión.</li>
@@ -191,14 +185,14 @@
                       <img class="img-fluid" alt="JustMarkets - Metales" loading="lazy" width="300" height="600" src="https://justmarkets.partners/uploads/promo_materials/jm-gif-trade-gold-silver-and-other-metals-es-300x600.gif">
                     </a>
                   </div>
-              
+
                   <div class="col-12 col-md-6 text-center">
                     <h5>Broker 2 - Cripto (JustMarkets)</h5>
                     <a href="https://one.justmarkets.link/a/tulg50psnu/es/landing/crypto-trading-with-justmarkets?promo=5252" target="_blank" rel="nofollow noopener noreferrer">
                       <img class="img-fluid" alt="JustMarkets - Cripto" loading="lazy" width="300" height="600" src="https://justmarkets.partners/uploads/promo_materials/jm-gif-crypto-trading-es-300x600.gif">
                     </a>
                   </div>
-              
+
                   <div class="col-12 col-md-6 offset-md-3 text-center">
                     <h5>Broker 3 - FBS (Global)</h5>
                     <a target="_blank" rel="nofollow" href="https://fbs.partners?ibl=350361&ibp=5593778">
@@ -207,7 +201,7 @@
                     </a>
                   </div>
                 </div>
-                <p class="text-center mt-3 small text-muted">Si un banner externo no carga por políticas del proveedor o bloqueadores, el fallback garantiza que el usuario vea una promoción coherente.</p>
+                <p class="text-center mt-3 small text-muted">Si un banner externo no carga por políticas del proveedor o bloqueadores, el fallback (cuando exista) muestra una alternativa. En el caso de FBS conservamos el script como lo pediste.</p>
               </section>
 
               <div class="call-to-action-platforms mt-4">
@@ -228,7 +222,6 @@
     <section class="adsense-block text-center py-5" aria-label="Bloque de anuncios">
       <div class="container">
         <h2 class="visually-hidden">Anuncio Google AdSense</h2>
-        <!-- Espacio para AdSense -->
       </div>
     </section>
 
