@@ -12,6 +12,7 @@
   <link rel="canonical" href="https://forexcapitalfree.online/conceptos.html">
   <link href="assets/img/favicon.jpg" rel="icon">
   <link href="assets/img/ForexCapitalFree.jpg" rel="apple-touch-icon">
+
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -20,8 +21,24 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/custom.css" rel="stylesheet">
+
   <meta name="google-adsense-account" content="ca-pub-5915929669781373">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5915929669781373" crossorigin="anonymous"></script>
+
+  <style>
+    /* Helper para encabezados ocultos (accesibilidad / validación) */
+    .visually-hidden {
+      position: absolute !important;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+      white-space: nowrap;
+      border: 0;
+      padding: 0;
+      margin: -1px;
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -56,7 +73,7 @@
           </li>
           <li><a href="descargas.html">Descargas</a></li>
           <li><a href="criptomonedas.html">Criptomonedas</a></li>
-          <li><a href="blog.html">Blog</a></li> 
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -73,11 +90,15 @@
         <ol>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="educacion.html">Educación</a></li>
-          <li class="active">Conceptos Básicos</li> </ol>
+          <li class="active">Conceptos Básicos</li>
+        </ol>
       </div>
     </div>
 
-    <section id="single-post-content" class="single-post-content section">
+    <section id="single-post-content" class="single-post-content section" aria-labelledby="conceptos-heading">
+      <!-- Encabezado invisible para cumplir con el validador (Section lacks heading) -->
+      <h2 id="conceptos-heading" class="visually-hidden">Artículo: Conceptos Básicos de Forex</h2>
+
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-10">
@@ -132,14 +153,6 @@
                 </div>
               </div>
 
-              <div class="adsense-block text-center py-5" data-aos="fade-up" data-aos-delay="100"
-                   role="complementary" aria-label="Bloque de anuncios">
-                <div class="container">
-                  <!-- Espacio para anuncio de Google AdSense -->
-                </div>
-              </div>
-
-
               <div class="info-block" data-aos="fade-up" data-aos-delay="300">
                 <h3>¿Qué se Negocia en Forex? Más Allá de las Divisas</h3>
                 <p>Aunque el Forex es principalmente el mercado de intercambio de divisas, en las plataformas de trading los brokers ofrecen acceso a una variedad de instrumentos financieros basados en el mismo concepto de "par" o "contrato negociable". Además de divisas, puedes comercializar:</p>
@@ -177,14 +190,6 @@
         </div>
       </div>
     </section>
-
-    <div class="adsense-block text-center py-5" data-aos="fade-up" data-aos-delay="100"
-         role="complementary" aria-label="Bloque de anuncios">
-      <div class="container">
-        <!-- Espacio para anuncio de Google AdSense -->
-      </div>
-    </div>
-
 
   </main>
 
