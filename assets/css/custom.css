@@ -40,3 +40,51 @@ body {
     min-height: 250px; /* Tamaño optimizado para móviles */
   }
 }
+
+:root{
+  --card-radius: 1.25rem;
+  --soft-bg: #f8fafc;
+  --soft-border: rgba(11,18,32,.10);
+  --soft-shadow: 0 10px 30px rgba(11,18,32,.06);
+}
+
+/* más “aire” general */
+.section { padding: 72px 0; }
+p { line-height: 1.75; }
+.text-muted { color: rgba(11,18,32,.70) !important; }
+
+/* fondos suaves alternados */
+.bg-soft { background: var(--soft-bg); }
+
+/* tarjetas pro */
+.pro-card{
+  border-radius: var(--card-radius);
+  box-shadow: var(--soft-shadow);
+  border: 1px solid var(--soft-border);
+  background: #fff;
+}
+
+/* mini cards (infografía) */
+.mini-stat{
+  border-radius: var(--card-radius);
+}
+
+/* acordeón más elegante */
+.pro-accordion .accordion-button{
+  border-radius: 0 !important;
+}
+.pro-accordion .accordion-button:focus{
+  box-shadow: none;
+}
+
+/* Ad slots: reservar espacio para evitar CLS */
+.ad-slot{
+  min-height: 280px;               /* desktop */
+  border-radius: 16px;
+  background: #f1f5f9;
+  border: 1px dashed rgba(11,18,32,.18);
+}
+@media (max-width: 576px){
+  .ad-slot{ min-height: 250px; }   /* mobile */
+}
+
