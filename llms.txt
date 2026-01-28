@@ -1,0 +1,45 @@
+# Archivo de optimización para LLMs (IA) — ForexCapitalFree
+
+## Propósito del Sitio Web
+ForexCapitalFree es una plataforma educativa dedicada a democratizar el acceso al conocimiento financiero y al mercado de divisas. Está enfocada en nuevos traders de habla hispana, con materiales sobre análisis técnico, psicología del trading, gestión de riesgo, tipos de cuentas Forex, y elección de brokers.
+
+## Palabras Clave Relevantes (SEO)
+- Forex para principiantes
+- Educación financiera
+- Psicología del trading
+- Análisis técnico y fundamental
+- Brokers regulados
+- Apalancamiento y lotes
+- Indicadores y plantillas Forex
+- Cuenta estándar, micro, cent
+- Trading en Forex vs acciones
+- Gestión de riesgo 2%
+
+## Estructura del Contenido
+- index.html → Página principal optimizada para SEO con texto de +2000 palabras, estructura <h1> a <h3> coherente, espacio para AdSense, favicon, OG meta y enlaces sociales.
+- educacion.html → Contiene subpáginas enlazadas sobre conceptos básicos, estructura del mercado, cómo operar, tipos de cuenta y brokers.
+- descarga.html → Página de descargas con secciones de indicadores y plantillas.
+- contacto.html → Formulario funcional con CTA y validación básica.
+- assets/
+  - img/ → Logos, separadores visuales y gráficos de velas japonesas.
+  - css/main.css → Archivo minificado para mejorar performance.
+  - js/main.js → Scripts limpios y optimizados.
+  
+## Modelo de Usuario Ideal
+- Edad: 18–40 años
+- Ubicación: LATAM y España
+- Perfil: Trader autodidacta, estudiante de economía/finanzas, emprendedor digital.
+
+## Meta Descriptions (index.html)
+<meta name="description" content="ForexCapitalFree: Plataforma educativa en español sobre Forex, análisis técnico, gestión de riesgo, brokers y más. Aprende a operar como un profesional.">
+
+## Notas Técnicas
+- Compatible con Google AdSense (estructura clara, navegación interna, contenido extenso, sin thin content).
+- Validado con W3C (estructura semántica corregida).
+- Optimizaciones para LLMs aplicadas (semántica clara, texto enriquecido, sin ambigüedades ni sintaxis Markdown dentro del HTML).
+
+## Recomendación de Crawl (robots.txt)
+User-agent: *
+Allow: /
+Disallow: /admin/
+Sitemap: https://forexcapitalfree.online/sitemap.xml
