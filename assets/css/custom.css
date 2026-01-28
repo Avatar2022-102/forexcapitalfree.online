@@ -87,4 +87,20 @@ p { line-height: 1.75; }
 @media (max-width: 576px){
   .ad-slot{ min-height: 250px; }   /* mobile */
 }
+/* Mini stats (bloque "por qué falla") */
+.mini-stat {
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.mini-stat:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 .75rem 1.5rem rgba(0,0,0,.08);
+  border-color: rgba(13,110,253,.25);
+}
+
+.mini-stat-text {
+  font-size: 0.82rem;   /* parecido a "x-small" pero controlado */
+  line-height: 1.25rem;
+}
+
 
