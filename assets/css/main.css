@@ -1773,3 +1773,23 @@ blockquote {
   }
   /* ... el resto de tus estilos ... */
 </style>
+
+/* Placeholder pro para ads (evita CLS) */
+.ad-slot {
+  min-height: 280px; /* Tamaño aproximado para desktop */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: #f1f5f9;
+  border: 1px dashed rgba(11,18,32,.18);
+  margin: 2rem 0;
+  color: #94a3b8;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 576px) {
+  .ad-slot { 
+    min-height: 250px; /* Tamaño optimizado para móviles */
+  }
+}
