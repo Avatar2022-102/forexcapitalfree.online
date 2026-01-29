@@ -1,46 +1,8 @@
-/* Este es mi archivo de estilos personalizados */
+/* =========================
+   ForexCapitalFree - custom.css (PRO limpio)
+   ========================= */
 
-/* Regla de prueba para verificar que el archivo se carga */
-body {
-    /* background-color: lightblue; */ /* Descomenta para ver un cambio de color y confirmar que carga */
-}
-
-/* Ajuste para separar los breadcrumbs de la parte superior */
-.breadcrumbs .container {
-    padding-top: 60px; /* Ajusta este valor según lo necesites */
-    padding-bottom: 30px; /* Opcional: para añadir espacio también en la parte inferior */
-}
-
-/* Si quieres separar específicamente el título H2 dentro de los breadcrumbs */
-.breadcrumbs h2 {
-    margin-top: 20px; /* Ajusta este valor para mover el título hacia abajo */
-    margin-bottom: 10px; /* Opcional: para separar el título de las migas de pan */
-}
-
-.broker-steps .step-item {
-  margin-bottom: 30px;
-}
-
-/* Placeholder pro para ads (evita CLS) */
-.ad-slot {
-  min-height: 280px; /* Tamaño aproximado para desktop */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 16px;
-  background: #f1f5f9;
-  border: 1px dashed rgba(11,18,32,.18);
-  margin: 2rem 0;
-  color: #94a3b8;
-  font-size: 0.8rem;
-}
-
-@media (max-width: 576px) {
-  .ad-slot { 
-    min-height: 250px; /* Tamaño optimizado para móviles */
-  }
-}
-
+/* Variables */
 :root{
   --card-radius: 1.25rem;
   --soft-bg: #f8fafc;
@@ -48,15 +10,42 @@ body {
   --soft-shadow: 0 10px 30px rgba(11,18,32,.06);
 }
 
-/* más “aire” general */
-.section { padding: 72px 0; }
-p { line-height: 1.75; }
-.text-muted { color: rgba(11,18,32,.70) !important; }
+/* Tipografía y legibilidad (sin romper el template) */
+.main p { line-height: 1.75; } /* evita afectar cosas fuera del contenido */
+.main .text-muted { color: rgba(11,18,32,.70) !important; }
 
-/* fondos suaves alternados */
+/* =========================
+   Espaciado (reduce “huecos”)
+   ========================= */
+
+/* Ajuste global de secciones: menos padding que 72px */
+.section { padding: 56px 0; }
+
+/* Brand strip: más compacto para eliminar espacio “al inicio” */
+.main section[aria-labelledby="brand-strip-title"]{
+  padding: 28px 0;
+}
+
+/* Ads section: evita el bloque enorme (py-5 + ad-slot) */
+.adsense-block{
+  padding: 36px 0 !important;
+}
+
+/* Breadcrumbs (páginas internas): reduce el “salto” */
+.breadcrumbs .container {
+  padding-top: 36px;
+  padding-bottom: 18px;
+}
+.breadcrumbs h2 {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+/* =========================
+   Fondos y tarjetas PRO
+   ========================= */
 .bg-soft { background: var(--soft-bg); }
 
-/* tarjetas pro */
 .pro-card{
   border-radius: var(--card-radius);
   box-shadow: var(--soft-shadow);
@@ -64,12 +53,9 @@ p { line-height: 1.75; }
   background: #fff;
 }
 
-/* mini cards (infografía) */
-.mini-stat{
-  border-radius: var(--card-radius);
-}
-
-/* acordeón más elegante */
+/* =========================
+   Accordion PRO
+   ========================= */
 .pro-accordion .accordion-button{
   border-radius: 0 !important;
 }
@@ -77,36 +63,54 @@ p { line-height: 1.75; }
   box-shadow: none;
 }
 
-/* Ad slots: reservar espacio para evitar CLS */
-.ad-slot{
-  min-height: 280px;               /* desktop */
-  border-radius: 16px;
-  background: #f1f5f9;
-  border: 1px dashed rgba(11,18,32,.18);
-}
-@media (max-width: 576px){
-  .ad-slot{ min-height: 250px; }   /* mobile */
-}
-/* Mini stats (bloque "por qué falla") */
-.mini-stat {
-  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-}
-
-.mini-stat:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 .75rem 1.5rem rgba(0,0,0,.08);
-  border-color: rgba(13,110,253,.25);
-}
-
-.mini-stat-text {
-  font-size: 0.82rem;   /* parecido a "x-small" pero controlado */
-  line-height: 1.25rem;
-}
-/* custom.css */
+/* Alineación fija de íconos en accordion */
 .pro-accordion .accordion-button i{
   width: 1.25rem;
   display: inline-flex;
   justify-content: center;
 }
 
+/* =========================
+   Mini stats (bloque “por qué falla”)
+   ========================= */
+.mini-stat{
+  border-radius: var(--card-radius);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.mini-stat:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 .75rem 1.5rem rgba(0,0,0,.08);
+  border-color: rgba(13,110,253,.25);
+}
+.mini-stat-text{
+  font-size: 0.82rem;
+  line-height: 1.25rem;
+}
 
+/* =========================
+   Ad slot (placeholder anti-CLS)
+   - Reservar espacio es correcto
+   - Pero sin margin extra ni altura exagerada
+   ========================= */
+.ad-slot{
+  width: 100%;
+  min-height: 250px;                 /* buen balance desktop */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: #f1f5f9;
+  border: 1px dashed rgba(11,18,32,.18);
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin: 0;                         /* importante: evita “huecos” */
+}
+@media (max-width: 576px){
+  .section{ padding: 44px 0; }
+  .ad-slot{ min-height: 220px; }     /* mobile */
+}
+
+/* Brokers steps */
+.broker-steps .step-item {
+  margin-bottom: 22px;
+}
