@@ -114,3 +114,28 @@
 .broker-steps .step-item {
   margin-bottom: 22px;
 }
+
+/* Contenedor principal sin márgenes si está vacío */
+.ad-slot-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* El slot solo tendrá tamaño y margen si tú lo decides o cuando Adsense inyecte el contenido */
+.ad-slot {
+    display: inline-block;
+    width: 100%;
+    max-width: 728px;
+    min-height: 0; /* Empieza en cero */
+    background-color: transparent; /* Sin fondo gris */
+    margin: 0; 
+    transition: all 0.3s ease;
+}
+
+/* OPCIONAL: Si quieres que se vea una línea sutil solo para saber dónde está */
+.ad-slot:empty {
+    min-height: 20px; /* Un espacio mínimo casi invisible */
+    border-top: 1px solid rgba(0,0,0,0.05); /* Línea muy suave */
+    margin-top: 20px;
+}
