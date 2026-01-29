@@ -151,3 +151,13 @@
 .section-compact { 
   padding: 20px 0; 
 }
+
+.accordion-text {
+    font-family: inherit;
+    color: #333;
+}
+
+/* Mejora para el LCP (Velocidad) */
+img {
+    content-visibility: auto;
+}
