@@ -214,12 +214,21 @@
 }
 
 .breadcrumbs-bg-default {
-  background-image: url("../img/breadcrumbs-bg.jpg"); /* Verifica que esta imagen exista */
+  background-image: url("../img/breadcrumbs-bg.jpg") !important; /* La ruta debe ser correcta */
   background-size: cover;
   background-position: center;
-  min-height: 20vh; /* Le da altura para que se vea el título */
+  min-height: 250px; /* Esto da el espacio para que no se vea pegado */
   position: relative;
-  padding: 60px 0;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.breadcrumbs-bg-default h2 {
+  color: #fff !important;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 /* spans del index */
