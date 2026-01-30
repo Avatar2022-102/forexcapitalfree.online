@@ -205,6 +205,14 @@
   margin: 0 auto;
 }
 
+/* Control de tamaño del logo para evitar que se vea gigante */
+.logo-img {
+    height: 150px !important; /* Ajusta este número si lo quieres más chico o grande */
+    width: auto;
+    max-width: 100%; /* Evita que se salga de la pantalla en móviles */
+    display: block;
+}
+
 /* spans del index */
 .text-inherit-333{ font-family: inherit; color: #333; }
 .text-inherit-333-bold{ font-family: inherit; font-weight: 700; color: #333; }
