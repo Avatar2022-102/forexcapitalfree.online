@@ -75,6 +75,13 @@
   margin-top: 35px !important;
 }
 
+article h2 {
+  margin-top: 40px;      /* espacio arriba */
+  margin-bottom: 20px;   /* espacio abajo */
+  font-size: 1.8rem;     /* tamaño de fuente */
+  font-weight: 700;      /* negrita */
+  color: #012970;        /* azul corporativo */
+}
 
 /* spans del index */
 .text-inherit-333{ font-family: inherit; color: #333; }
