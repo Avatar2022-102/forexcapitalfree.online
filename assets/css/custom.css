@@ -213,6 +213,15 @@
     display: block;
 }
 
+.breadcrumbs-bg-default {
+  background-image: url("../img/breadcrumbs-bg.jpg"); /* Verifica que esta imagen exista */
+  background-size: cover;
+  background-position: center;
+  min-height: 20vh; /* Le da altura para que se vea el título */
+  position: relative;
+  padding: 60px 0;
+}
+
 /* spans del index */
 .text-inherit-333{ font-family: inherit; color: #333; }
 .text-inherit-333-bold{ font-family: inherit; font-weight: 700; color: #333; }
