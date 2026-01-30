@@ -46,6 +46,36 @@
   margin: 0 auto;
 }
 
+/* =========================
+   FIX GLOBAL: Título pegado al header
+   (breadcrumbs / page-title / títulos)
+   ========================= */
+
+/* 1) Si la página usa el bloque .breadcrumbs del template */
+.breadcrumbs{
+  padding: 90px 0 35px !important; /* aire arriba */
+}
+
+/* Evita que el container interno meta padding raro */
+.breadcrumbs .container{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* 2) Si algunas páginas usan tus nuevas clases breadcrumbs-bg-... SIN .breadcrumbs
+      (ej: <div class="breadcrumbs-bg-default d-flex ...">) */
+.breadcrumbs-bg-default,
+.breadcrumbs-bg-logo{
+  padding: 90px 0 35px !important;
+}
+
+/* 3) Fallback: si no hay breadcrumbs, separa el primer título del header */
+.main h1:first-child,
+.main .post-title:first-child{
+  margin-top: 35px !important;
+}
+
+
 /* spans del index */
 .text-inherit-333{ font-family: inherit; color: #333; }
 .text-inherit-333-bold{ font-family: inherit; font-weight: 700; color: #333; }
