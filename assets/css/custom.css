@@ -1,12 +1,177 @@
 /* =========================
+   ForexCapitalFree - custom.css (PRO + Auditoría)
+   - Sin inline styles en HTML
+   - Fix títulos pegados al header
+   ========================= */
+
+/* =========================
+   Variables
+   ========================= */
+:root{
+  --card-radius: 1.25rem;
+  --soft-bg: #f8fafc;
+  --soft-border: rgba(11,18,32,.10);
+  --soft-shadow: 0 10px 30px rgba(11,18,32,.06);
+}
+
+/* =========================
+   Tipografía y legibilidad (sin romper el template)
+   ========================= */
+.main p { line-height: 1.75; }
+.main .text-muted { color: rgba(11,18,32,.70) !important; }
+
+/* =========================
+   Espaciado (reduce “huecos”)
+   ========================= */
+.section { padding: 56px 0; }
+
+/* Brand strip: compacto */
+.main section[aria-labelledby="brand-strip-title"]{
+  padding: 28px 0;
+}
+
+/* Ads section: evita bloque enorme */
+.adsense-block{
+  padding: 36px 0 !important;
+}
+
+/* Breadcrumbs (páginas internas): reduce “salto” + evita títulos pegados */
+.breadcrumbs{
+  padding: 90px 0 35px !important; /* aire arriba */
+}
+.breadcrumbs .container{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.breadcrumbs h2{
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+/* Fallback: si una página no usa breadcrumbs y el primer título queda pegado */
+.main h1:first-child,
+.main .post-title:first-child{
+  margin-top: 35px !important;
+}
+
+/* =========================
+   Fondos y tarjetas PRO
+   ========================= */
+.bg-soft { background: var(--soft-bg); }
+
+.pro-card{
+  border-radius: var(--card-radius);
+  box-shadow: var(--soft-shadow);
+  border: 1px solid var(--soft-border);
+  background: #fff;
+}
+
+/* =========================
+   Accordion PRO
+   ========================= */
+.pro-accordion .accordion-button{
+  border-radius: 0 !important;
+}
+.pro-accordion .accordion-button:focus{
+  box-shadow: none;
+}
+.pro-accordion .accordion-button i{
+  width: 1.25rem;
+  display: inline-flex;
+  justify-content: center;
+}
+
+/* =========================
+   Mini stats
+   ========================= */
+.mini-stat{
+  border-radius: var(--card-radius);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.mini-stat:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 .75rem 1.5rem rgba(0,0,0,.08);
+  border-color: rgba(13,110,253,.25);
+}
+.mini-stat-text{
+  font-size: 0.82rem;
+  line-height: 1.25rem;
+}
+
+/* =========================
+   Ad slot (placeholder anti-CLS) - UNIFICADO
+   - Sin “huecos” grandes
+   ========================= */
+.ad-slot-container{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ad-slot{
+  display: inline-block;
+  width: 100%;
+  max-width: 728px;
+  min-height: 0;                 /* por defecto: sin hueco grande */
+  background: transparent;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+/* Si está vacío, deja una marca mínima (opcional) */
+.ad-slot:empty{
+  min-height: 20px;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  margin-top: 20px;
+}
+
+@media (max-width: 576px){
+  .section{ padding: 44px 0; }
+}
+
+/* Brokers steps */
+.broker-steps .step-item{
+  margin-bottom: 22px;
+}
+
+/* Imágenes del “strip” */
+.brand-strip-img{
+  max-height: 50px;
+  width: auto;
+}
+.promo-logo-img{
+  max-inline-size: 360px;
+  block-size: auto;
+}
+.section-compact{
+  padding: 20px 0;
+}
+
+/* =========================
+   Estilo de títulos internos (mejora lectura)
+   ========================= */
+article h2{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #012970;
+}
+
+/* =========================
    Auditoría: remover inline styles
    ========================= */
 
-/* Logos header */
+/* Logos header (reemplaza style="height:...") */
 .logo-img { height: 150px; }
 .logo-img-sm { height: 120px; }
 
-/* Breadcrumbs backgrounds */
+/* Breadcrumbs backgrounds (reemplaza style="background-image:...") */
+/* IMPORTANTE: usarlas así:
+   <div class="breadcrumbs d-flex align-items-center breadcrumbs-bg-default">
+   o
+   <div class="breadcrumbs d-flex align-items-center breadcrumbs-bg-logo">
+*/
 .breadcrumbs-bg-logo{
   background-image: url("../img/ForexCapitalFreeLogo.png");
   background-size: cover;
@@ -20,7 +185,7 @@
   background-repeat: no-repeat;
 }
 
-/* Imágenes centradas */
+/* Imágenes centradas (reemplaza style="max-height... margin...") */
 .img-center-400{
   max-height: 400px;
   width: auto;
@@ -47,48 +212,11 @@
 }
 
 /* =========================
-   FIX GLOBAL: Título pegado al header
-   (breadcrumbs / page-title / títulos)
-   ========================= */
-
-/* 1) Si la página usa el bloque .breadcrumbs del template */
-.breadcrumbs{
-  padding: 90px 0 35px !important; /* aire arriba */
-}
-
-/* Evita que el container interno meta padding raro */
-.breadcrumbs .container{
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-/* 2) Si algunas páginas usan tus nuevas clases breadcrumbs-bg-... SIN .breadcrumbs
-      (ej: <div class="breadcrumbs-bg-default d-flex ...">) */
-.breadcrumbs-bg-default,
-.breadcrumbs-bg-logo{
-  padding: 90px 0 35px !important;
-}
-
-/* 3) Fallback: si no hay breadcrumbs, separa el primer título del header */
-.main h1:first-child,
-.main .post-title:first-child{
-  margin-top: 35px !important;
-}
-
-article h2 {
-  margin-top: 40px;      /* espacio arriba */
-  margin-bottom: 20px;   /* espacio abajo */
-  font-size: 1.8rem;     /* tamaño de fuente */
-  font-weight: 700;      /* negrita */
-  color: #012970;        /* azul corporativo */
-}
-
-/* =========================
    Helpers globales (sin <style> en HTML)
    ========================= */
 
 /* Accesibilidad: equivalente a Bootstrap visually-hidden */
-.visually-hidden {
+.visually-hidden{
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -101,14 +229,14 @@ article h2 {
 }
 
 /* Card simple para artículos (lo usabas en acciones.html) */
-.content-card {
+.content-card{
   background: #fff;
   padding: 24px;
   border-radius: 8px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
 }
 
-/* spans del index */
+/* spans del index (reemplaza <span style="...">) */
 .text-inherit-333{ font-family: inherit; color: #333; }
 .text-inherit-333-bold{ font-family: inherit; font-weight: 700; color: #333; }
 
@@ -116,3 +244,12 @@ article h2 {
 .investing-poweredby{ font-family: Arial, Helvetica, sans-serif; }
 .investing-poweredby-text{ font-size: 11px; color: #333333; text-decoration: none; }
 .investing-poweredby-link{ font-size: 11px; color: #06529D; font-weight: bold; }
+
+/* =========================
+   Performance (suave)
+   ========================= */
+/* Ojo: content-visibility en todos los img puede dar efectos raros en algunos layouts.
+   Si ves imágenes que no aparecen hasta scrollear, quítalo. */
+img{
+  content-visibility: auto;
+}
