@@ -2,6 +2,7 @@
    ForexCapitalFree - custom.css (PRO + Auditoría)
    - Sin inline styles en HTML
    - Fix títulos pegados al header
+   - Helpers globales (sin <style> en páginas)
    ========================= */
 
 /* =========================
@@ -21,23 +22,27 @@
 .main .text-muted { color: rgba(11,18,32,.70) !important; }
 
 /* =========================
-   Espaciado (reduce “huecos”)
+   Espaciado general
    ========================= */
 .section { padding: 56px 0; }
 
-/* Brand strip: compacto */
 .main section[aria-labelledby="brand-strip-title"]{
   padding: 28px 0;
 }
 
-/* Ads section: evita bloque enorme */
 .adsense-block{
   padding: 36px 0 !important;
 }
 
-/* Breadcrumbs (páginas internas): reduce “salto” + evita títulos pegados */
+/* =========================
+   Breadcrumbs (evita títulos pegados al header)
+   IMPORTANTE: usar SIEMPRE:
+   <div class="breadcrumbs d-flex align-items-center breadcrumbs-bg-default">
+   o
+   <div class="breadcrumbs d-flex align-items-center breadcrumbs-bg-logo">
+   ========================= */
 .breadcrumbs{
-  padding: 90px 0 35px !important; /* aire arriba */
+  padding: 90px 0 35px !important;
 }
 .breadcrumbs .container{
   padding-top: 0 !important;
@@ -100,25 +105,21 @@
 
 /* =========================
    Ad slot (placeholder anti-CLS) - UNIFICADO
-   - Sin “huecos” grandes
    ========================= */
 .ad-slot-container{
   width: 100%;
   margin: 0 auto;
   text-align: center;
 }
-
 .ad-slot{
   display: inline-block;
   width: 100%;
   max-width: 728px;
-  min-height: 0;                 /* por defecto: sin hueco grande */
+  min-height: 0;
   background: transparent;
   margin: 0;
   transition: all 0.3s ease;
 }
-
-/* Si está vacío, deja una marca mínima (opcional) */
 .ad-slot:empty{
   min-height: 20px;
   border-top: 1px solid rgba(0,0,0,0.05);
@@ -129,63 +130,19 @@
   .section{ padding: 44px 0; }
 }
 
-/* Brokers steps */
+/* =========================
+   Brokers
+   ========================= */
 .broker-steps .step-item{
   margin-bottom: 22px;
 }
 
-/* Imágenes del “strip” */
-.brand-strip-img{
-  max-height: 50px;
-  width: auto;
-}
-.promo-logo-img{
-  max-inline-size: 360px;
-  block-size: auto;
-}
-.section-compact{
-  padding: 20px 0;
-}
-
 /* =========================
-   Estilo de títulos internos (mejora lectura)
+   Imágenes (reemplaza inline styles)
    ========================= */
-article h2{
-  margin-top: 40px;
-  margin-bottom: 20px;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #012970;
-}
-
-/* =========================
-   Auditoría: remover inline styles
-   ========================= */
-
-/* Logos header (reemplaza style="height:...") */
 .logo-img { height: 150px; }
 .logo-img-sm { height: 120px; }
 
-/* Breadcrumbs backgrounds (reemplaza style="background-image:...") */
-/* IMPORTANTE: usarlas así:
-   <div class="breadcrumbs d-flex align-items-center breadcrumbs-bg-default">
-   o
-   <div class="breadcrumbs d-flex align-items-center breadcrumbs-bg-logo">
-*/
-.breadcrumbs-bg-logo{
-  background-image: url("../img/ForexCapitalFreeLogo.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.breadcrumbs-bg-default{
-  background-image: url("../img/breadcrumbs-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* Imágenes centradas (reemplaza style="max-height... margin...") */
 .img-center-400{
   max-height: 400px;
   width: auto;
@@ -211,11 +168,49 @@ article h2{
   margin: 0 auto;
 }
 
+/* strip / promos */
+.brand-strip-img{
+  max-height: 50px;
+  width: auto;
+}
+.promo-logo-img{
+  max-inline-size: 360px;
+  block-size: auto;
+}
+.section-compact{
+  padding: 20px 0;
+}
+
+/* =========================
+   Breadcrumbs backgrounds (sin style="background-image")
+   ========================= */
+.breadcrumbs-bg-logo{
+  background-image: url("../img/ForexCapitalFreeLogo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.breadcrumbs-bg-default{
+  background-image: url("../img/breadcrumbs-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* =========================
+   Estilo de títulos internos (mejora lectura)
+   ========================= */
+article h2{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #012970;
+}
+
 /* =========================
    Helpers globales (sin <style> en HTML)
    ========================= */
-
-/* Accesibilidad: equivalente a Bootstrap visually-hidden */
 .visually-hidden{
   position: absolute !important;
   height: 1px;
@@ -228,171 +223,13 @@ article h2{
   margin: -1px;
 }
 
-/* Card simple para artículos (lo usabas en acciones.html) */
+/* Card simple (usada en acciones / artículos) */
 .content-card{
   background: #fff;
   padding: 24px;
   border-radius: 8px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
 }
-
-/* === TEAM MEMBER === */
-.team-member {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.team-member img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-    border: 4px solid #f8f9fa;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.team-member h4 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.team-member p.role {
-    font-size: .95rem;
-    color: #6c757d;
-    margin-bottom: 10px;
-}
-
-/* === CALL TO ACTION ABOUT === */
-.call-to-action-about {
-    background-color: #f8f9fa;
-    padding: 40px;
-    border-radius: 8px;
-    text-align: center;
-    margin-top: 50px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
-
-.call-to-action-about h3 {
-    color: #0d6efd;
-    margin-bottom: 20px;
-}
-
-.call-to-action-about .btn {
-    margin: 0 10px;
-    font-size: 1.1em;
-    padding: 12px 30px;
-    border-radius: 50px;
-}
-
-/* === BLOCKQUOTE PERSONALIZADO === */
-.my-custom-blockquote {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-/* === INFO BLOCK (consistencia visual) === */
-.info-block {
-    background: #fff;
-    padding: 22px;
-    border-radius: 8px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-    margin-bottom: 24px;
-}
-
-/* === VISUALLY HIDDEN (ACCESIBILIDAD) === */
-.visually-hidden {
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap;
-    border: 0;
-    padding: 0;
-    margin: -1px;
-}
-
-/* === CONTENT CARD (similar a estilo de contacto) === */
-.content-card {
-    background: #fff;
-    padding: 24px;
-    border-radius: 8px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
-}
-
-/* === VISUALLY HIDDEN (ACCESIBILIDAD) === */
-.visually-hidden {
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap;
-    border: 0;
-    padding: 0;
-    margin: -1px;
-}
-
-/* === BLOG SIDEBAR: AJUSTES SIN MINIATURAS === */
-.blog-sidebar .recent-posts .post-item {
-    padding: 10px 0;
-    border-bottom: 1px solid #f1f1f1;
-}
-
-.blog-sidebar .recent-posts .post-item:last-child {
-    border-bottom: none;
-}
-
-.post-title-sm {
-    font-size: 1rem;
-    margin: 0;
-}
-
-.post-title-sm a {
-    color: #212529;
-    text-decoration: none;
-}
-
-.post-title-sm a:hover {
-    text-decoration: underline;
-}
-
-.post-item time {
-    display: block;
-    font-size: .875rem;
-    color: #6c757d;
-    margin-top: 4px;
-}
-
-/* === VISUALLY HIDDEN (ACCESIBILIDAD) === */
-.visually-hidden {
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap;
-    border: 0;
-    padding: 0;
-    margin: -1px;
-}
-
-/* === VISUALLY HIDDEN (ACCESIBILIDAD) === */
-.visually-hidden {
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap;
-    border: 0;
-    padding: 0;
-    margin: -1px;
-}
-   
-
 
 /* spans del index (reemplaza <span style="...">) */
 .text-inherit-333{ font-family: inherit; color: #333; }
@@ -404,10 +241,53 @@ article h2{
 .investing-poweredby-link{ font-size: 11px; color: #06529D; font-weight: bold; }
 
 /* =========================
+   about.html (migrado desde <style>)
+   ========================= */
+.team-member { text-align:center; margin-bottom:30px; }
+
+.team-member img{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:15px;
+  border:4px solid #f8f9fa;
+  box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+.team-member h4{ font-size:1.25rem; font-weight:600; margin-bottom:5px; }
+.team-member p.role{ font-size:.95rem; color:#6c757d; margin-bottom:10px; }
+
+.call-to-action-about{
+  background-color:#f8f9fa;
+  padding:40px;
+  border-radius:8px;
+  text-align:center;
+  margin-top:50px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.05);
+}
+.call-to-action-about h3{ color:#0d6efd; margin-bottom:20px; }
+.call-to-action-about .btn{
+  margin:0 10px;
+  font-size:1.1em;
+  padding:12px 30px;
+  border-radius:50px;
+}
+.my-custom-blockquote{ margin-top:50px; margin-bottom:50px; }
+
+/* Consistencia visual (si no existe en main.css) */
+.info-block{
+  background:#fff;
+  padding:22px;
+  border-radius:8px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  margin-bottom:24px;
+}
+
+/* =========================
    Performance (suave)
    ========================= */
-/* Ojo: content-visibility en todos los img puede dar efectos raros en algunos layouts.
-   Si ves imágenes que no aparecen hasta scrollear, quítalo. */
+/* Si ves imágenes que aparecen tarde, elimina esta regla */
 img{
   content-visibility: auto;
 }
