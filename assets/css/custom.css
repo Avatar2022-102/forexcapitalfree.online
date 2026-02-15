@@ -322,6 +322,51 @@ article h2{
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
 }
 
+/* === VISUALLY HIDDEN (ACCESIBILIDAD) === */
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+    border: 0;
+    padding: 0;
+    margin: -1px;
+}
+
+/* === BLOG SIDEBAR: AJUSTES SIN MINIATURAS === */
+.blog-sidebar .recent-posts .post-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.blog-sidebar .recent-posts .post-item:last-child {
+    border-bottom: none;
+}
+
+.post-title-sm {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.post-title-sm a {
+    color: #212529;
+    text-decoration: none;
+}
+
+.post-title-sm a:hover {
+    text-decoration: underline;
+}
+
+.post-item time {
+    display: block;
+    font-size: .875rem;
+    color: #6c757d;
+    margin-top: 4px;
+}
+
+
 
 /* spans del index (reemplaza <span style="...">) */
 .text-inherit-333{ font-family: inherit; color: #333; }
