@@ -773,6 +773,30 @@ article h2{
 }
 
 /* =========================
+   FIX DEFINITIVO: GIF Brokers
+   ========================= */
+.broker-banner{
+  overflow: visible !important;
+}
+
+.broker-banner .row,
+.broker-banner .col-12,
+.broker-banner .col-md-6{
+  overflow: visible !important;
+  min-height: 1px;
+}
+
+img.broker-gif{
+  display: block !important;
+  width: 300px !important;
+  max-width: 100% !important;
+  height: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  margin: 0 auto !important;
+}
+
+/* =========================
    Performance (suave)
    ========================= */
 /* Si ves imágenes que aparecen tarde, descomenta/borra esto.
