@@ -766,26 +766,11 @@ article h2{
   box-shadow: 0 4px 15px rgba(0,0,0,0.06);
 }
 
-/* Broker banners */
-.broker-banner .broker-gif{
-  content-visibility: visible; /* evita que se “oculte” */
-  display: inline-block;
+.broker-gif{
+  display: block;
   max-width: 300px;
   height: auto;
 }
-
-/* =========================
-   FIX: GIF brokers (si no se ve)
-   ========================= */
-.broker-gif{
-  content-visibility: visible !important; /* evita que lo “apague” el navegador */
-  display: inline-block !important;
-  max-width: 300px;
-  height: auto !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
 
 /* =========================
    Performance (suave)
