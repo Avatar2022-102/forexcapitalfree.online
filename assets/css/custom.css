@@ -816,6 +816,52 @@ img.broker-gif{
 }
 
 /* =========================
+   Brokers (tarjetas rápidas, sin GIF)
+   ========================= */
+.brokers-picks .broker-card{
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid rgba(11,18,32,.10);
+  box-shadow: 0 10px 30px rgba(11,18,32,.06);
+  padding: 22px;
+  height: 100%;
+}
+
+.brokers-picks .broker-card-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.brokers-picks .broker-name{
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.brokers-picks .broker-badge{
+  background: #eaf4ff;
+  color: #0d6efd;
+  border: 1px solid rgba(13,110,253,.20);
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.brokers-picks .broker-desc{
+  color: rgba(11,18,32,.75);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.brokers-picks .broker-risk{
+  font-size: .95rem;
+  color: rgba(11,18,32,.70);
+}
+
+
+/* =========================
    Performance (suave)
    ========================= */
 /* Si ves imágenes que aparecen tarde, descomenta/borra esto.
