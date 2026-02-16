@@ -775,6 +775,19 @@ article h2{
 }
 
 /* =========================
+   FIX: GIF brokers (si no se ve)
+   ========================= */
+.broker-gif{
+  content-visibility: visible !important; /* evita que lo “apague” el navegador */
+  display: inline-block !important;
+  max-width: 300px;
+  height: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+
+/* =========================
    Performance (suave)
    ========================= */
 /* Si ves imágenes que aparecen tarde, descomenta/borra esto.
