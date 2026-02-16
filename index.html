@@ -35,6 +35,10 @@
   <link rel="apple-touch-icon" href="assets/img/ForexCapitalFree.jpg">
   <link rel="manifest" href="/manifest.json">
 
+  <!-- Preload HERO (mejora LCP móvil) -->
+  <link rel="preload" as="image" href="assets/img/adam-smigielski-K5mPtONmpHM-unsplash.webp" type="image/webp">
+  <link rel="preload" as="image" href="assets/img/adam-smigielski-K5mPtONmpHM-unsplash.jpg" type="image/jpeg">
+
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -114,10 +118,24 @@
 
     <!-- HERO -->
     <section id="hero" class="hero section dark-background">
-      <img src="assets/img/adam-smigielski-K5mPtONmpHM-unsplash.jpg" alt="Banner de educación en Trading Forex" data-aos="fade-in">
-      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+      <picture>
+        <source srcset="assets/img/adam-smigielski-K5mPtONmpHM-unsplash.webp" type="image/webp">
+        <img
+          src="assets/img/adam-smigielski-K5mPtONmpHM-unsplash.jpg"
+          alt="Banner de educación en Trading Forex"
+          data-aos="fade-in"
+          width="1200"
+          height="675"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high">
+      </picture>
+    
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center"
+           data-aos="fade-up" data-aos-delay="100">
         <h1>Tu camino hacia la libertad financiera comienza aquí.</h1>
         <p>Aprende, opera y triunfa en el mercado Forex con nuestros recursos gratuitos.</p>
+    
         <div class="d-flex gap-2 mt-4 flex-wrap justify-content-center">
           <a href="educacion.html" class="btn btn-outline-light">Comenzar a Aprender</a>
           <a href="descargas.html" class="btn btn-outline-light">Descargar Herramientas</a>
