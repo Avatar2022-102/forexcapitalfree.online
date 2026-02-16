@@ -796,6 +796,25 @@ img.broker-gif{
   margin: 0 auto !important;
 }
 
+/* === FIX: GIF Broker no visible === */
+.broker-banner { overflow: visible !important; }
+.broker-banner .row,
+.broker-banner .col-12,
+.broker-banner .col-md-6 { overflow: visible !important; }
+
+.broker-link{
+  display: inline-block;
+}
+
+.broker-gif{
+  display: block !important;
+  width: 300px !important;
+  max-width: 100% !important;
+  height: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
 /* =========================
    Performance (suave)
    ========================= */
